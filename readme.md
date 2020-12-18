@@ -12,4 +12,4 @@
 
 - npm install uuid //to generate unique id for every user
 
-* Create a room id
+* Create a room id <done/>

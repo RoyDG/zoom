@@ -2,14 +2,23 @@ const express = require('express');
 const app = express(); // initialize express
 // create server
 const server = require('http').Server(app);
-
+const { v4: uuidv4 } = require('uuid'); //imported uuid
 
 
 app.set('view engine', 'ejs');
-// let's create our first url that we are going to hit it's slash url which is the root url
+
+//redirect our root to uuid
 app.get('/', (req, res) => {
-    res.render("room");
+    res.redirect(`/${uuidv4()}`);// using string literals
 })
+
+//render our room here with unique id by passing parameter
+app.get('/:room', (req, res) => {
+    res.render("room", { roomId: req.params.room });
+});
+
+
+
 
 
 
