@@ -3,6 +3,7 @@ const app = express(); // initialize express
 // create server
 const server = require('http').Server(app);
 const { v4: uuidv4 } = require('uuid'); //imported uuid
+app.use(express.static('public'));//set the public url for script file
 
 
 app.set('view engine', 'ejs');

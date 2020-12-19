@@ -13,3 +13,7 @@
 - npm install uuid //to generate unique id for every user
 
 * Create a room id <done/>
+
+-
+
+* Add the ability to view our own video on going...
