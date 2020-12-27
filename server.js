@@ -2,6 +2,7 @@ const express = require('express');
 const app = express(); // initialize express
 // create server
 const server = require('http').Server(app);
+const io = require('socket.io')(server) // import it after installing socket.io
 const { v4: uuidv4 } = require('uuid'); //imported uuid
 app.set('view engine', 'ejs');
 app.use(express.static('public'));//set the public url for script file
@@ -20,7 +21,12 @@ app.get('/:room', (req, res) => {
 });
 
 
-
+io.on('connection', socket => {
+    socket.on('join-room', (roomId) => {
+       socket.join(roomId)
+       socket.to(roomId).broadcast.emit('user-connected')
+    })
+})
 
 
 

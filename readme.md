@@ -14,6 +14,10 @@
 
 * Create a room id <done/>
 
--
+- style.css added to styling video grid
 
 * Add the ability to view our own video <done/>
+
+- nmp install socket.io then import it in server.js
+
+* Add the ability to allow others to stream their video
