@@ -19,5 +19,7 @@
 * Add the ability to view our own video <done/>
 
 - nmp install socket.io then import it in server.js
+- we need to install peer js for peer to peer communication which is WebRTC. npm install peer.
+- two people can talk to each other and video stream together
 
-* Add the ability to allow others to stream their video
+* Add the ability to allow others to stream their video <done/>
