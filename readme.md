@@ -23,3 +23,6 @@
 - two people can talk to each other and video stream together
 
 * Add the ability to allow others to stream their video <done/>
+
+- main section added in room.ejs
+- styling
