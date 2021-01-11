@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #video-grid {
   display: flex;
   justify-content: center;
@@ -15,9 +20,40 @@ video {
 }
 
 .main__left {
+  display: flex;
+  flex-direction: column;
   flex: 0.8;
 }
 
 .main__right {
   flex: 0.2;
+}
+
+#main__videos {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 37, 37);
+}
+
+.main__controls {
+  display: flex;
+  padding: 5px;
+  background-color: #1c1e20;
+  color: #d2d2d2;
+}
+
+.main__controls__block {
+  display: flex;
+}
+
+.main__controls__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  min-width: 80px;
+  cursor: pointer;
 }
