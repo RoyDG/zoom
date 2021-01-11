@@ -27,3 +27,4 @@
 - main section added in room.ejs
 - styling
 - Speaker & Stop video option added in the bottom
+- done adding all options in the left hand side
