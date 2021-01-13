@@ -28,3 +28,5 @@
 - styling
 - Speaker & Stop video option added in the bottom
 - done adding all options in the left hand side
+- Right hand side (chat) styling done
+- Bootstrap link and script added
